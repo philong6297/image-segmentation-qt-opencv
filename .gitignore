@@ -1,0 +1,6 @@
+**/.vs/**
+**/_Resharper.Caches/**
+**/Win32/**
+**/Release/**
+**/Debug/**
+**/GeneratedFiles/**
