@@ -4,3 +4,6 @@
 **/Release/**
 **/Debug/**
 **/GeneratedFiles/**
+**/x64/**
+multimedia-project/input/**
+multimedia-project.sln.DotSettings

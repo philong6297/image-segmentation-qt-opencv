@@ -1,11 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="otsu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="image_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="threshold_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="histogram_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clustering_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kmean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,15 +50,37 @@
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
+    <Filter Include="Header Files\Precompiled Headers">
+      <UniqueIdentifier>{d1fdc637-bd4a-430a-a9f3-a66cb65e14ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Image Segmentation">
+      <UniqueIdentifier>{23ecb52a-ae41-4b86-999a-83fea671bb88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Visualization">
+      <UniqueIdentifier>{03d580c6-21ff-46fb-b2cd-f1ef1b8157f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Widgets &amp; Views">
+      <UniqueIdentifier>{3c1356f5-a8d3-4a29-8eb7-ca9434149eb9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
+    <QtMoc Include="threshold_widget.h">
+      <Filter>Header Files\Widgets &amp; Views</Filter>
+    </QtMoc>
     <QtMoc Include="main_window.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Widgets &amp; Views</Filter>
+    </QtMoc>
+    <QtMoc Include="image_view.h">
+      <Filter>Header Files\Widgets &amp; Views</Filter>
+    </QtMoc>
+    <QtMoc Include="histogram_view.h">
+      <Filter>Header Files\Widgets &amp; Views</Filter>
+    </QtMoc>
+    <QtMoc Include="clustering_widget.h">
+      <Filter>Header Files\Widgets &amp; Views</Filter>
+    </QtMoc>
+    <QtMoc Include="stop_watch.h">
+      <Filter>Header Files\Widgets &amp; Views</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -53,5 +95,27 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="multimedia-project.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Precompiled Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="otsu.h">
+      <Filter>Header Files\Image Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_main_window.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities.h">
+      <Filter>Header Files\Image Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="kmean.h">
+      <Filter>Header Files\Image Segmentation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="macros.inl">
+      <Filter>Header Files\Precompiled Headers</Filter>
+    </None>
   </ItemGroup>
 </Project>
